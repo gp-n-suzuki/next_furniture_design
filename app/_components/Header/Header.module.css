@@ -1,0 +1,87 @@
+.header {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(100%, 1360px);
+    height: 80px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.logo {
+    display: block;
+    width: 180px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 2;
+    padding: 40px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nav.active {
+    left: 0;
+    opacity: 1;
+}
+
+.menu {
+    display: grid;
+    gap: 10px;
+}
+
+.toggle_btn {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.toggle_btn span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.toggle_btn span:first-child {
+    top: 10px;
+}
+
+.toggle_btn span:last-child {
+    bottom: 10px;
+}
+
+.toggle_btn.active span {
+    background-color: #fff;
+}
+
+.toggle_btn.active span:first-child {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.toggle_btn.active span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.background.active {
+    display: block;
+}
