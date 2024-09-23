@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 1360px);
+    margin: 0 auto;
+    padding: 20px 40px;
+    font-size: small;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    font-weight: 300;
+}
+
+.copyright {
+    font-size: x-small;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+    }
+}
