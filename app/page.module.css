@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .wrapper {
+    .grid_container {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px 20px;
     }
