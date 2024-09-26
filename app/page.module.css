@@ -12,6 +12,11 @@
     gap: 35px;
 }
 
+.heading {
+    font-size: 1rem;
+    padding: 35px 0;
+}
+
 .more {
     text-align: center;
     font-size: 1rem;
