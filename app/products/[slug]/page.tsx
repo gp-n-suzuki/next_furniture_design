@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../page.module.css";
+import styles from './products.module.css';
 import { Item } from '@/types/Item';
 import Card from '@/app/_components/Card/Card';
 import Paginator from '@/app/_components/Paginator/Paginator';

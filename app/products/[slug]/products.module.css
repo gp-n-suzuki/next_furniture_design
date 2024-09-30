@@ -12,11 +12,9 @@
     gap: 35px;
 }
 
-.more {
-    text-align: center;
+.heading {
     font-size: 1rem;
-    font-weight: 200;
-    margin-top: 25px;
+    padding: 35px 0;
 }
 
 @media screen and (max-width: 900px) {
