@@ -1,0 +1,17 @@
+.wrapper {
+    font-size: 0.85rem;
+    font-weight: 300;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.heading {
+    padding: 35px 0;
+}
+
+.container {
+    display: grid;
+    gap: 30px;
+    max-width: 600px;
+    line-height: 2;
+}
