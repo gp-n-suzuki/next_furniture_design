@@ -16,7 +16,7 @@ const Header = () => {
 
             <nav className={`${styles.nav} ${isShow ? styles.active : ""}`}>
                 <ul className={styles.menu}>
-                    <li><Link href="/products">PRODUCTS</Link></li>
+                    <li><Link href="/products/1">PRODUCTS</Link></li>
                     <li><Link href="/about">ABOUT</Link></li>
                     <li><Link href="/company">COMPANY</Link></li>
                     <li><Link href="mailto:xxxxx@xxx.xxx?subject=お問い合わせ">CONTACT</Link></li>
