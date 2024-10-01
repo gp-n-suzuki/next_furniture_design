@@ -14,7 +14,9 @@ const page = async ({ params }: { params: { slug: string } }) => {
         <div className={styles.wrapper}>
             <h2 className={styles.heading}>Products</h2>
             <div className={styles.grid_container}>
-                <Card items={items} />
+                {items.map((item, index) => (
+                    <Card item={item} key={index} />
+                ))}
             </div>
             <Paginator totalPages={totalPages} />
         </div>

@@ -12,7 +12,9 @@ export default async function Home() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.grid_container}>
-        <Card items={items} />
+          {items.map((item, index) => (
+            <Card item={item} key={index} />
+          ))}
       </div>
       <div className={styles.more}>
         <Link href={"/products/1"}>View More</Link>
